@@ -377,6 +377,65 @@ body{
     margin: 20px 0;
 }
 
+/* Login */
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container{
+   display: flex;
+   flex-grow: 1;
+}
+
+.main-content{
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 930px;
+    flex-grow: 1;
+}
+
+.slide-container{
+    height: 620px;
+    flex-basis: 450px;
+}
+
+.slide-content{
+    margin: 100px 0 0 150px;
+    position: relative;
+}
+
+.slide-container img{
+   position: absolute;
+   inset: 0;
+   overflow: hidden;
+   visibility: hidden;
+}
+
+.slide-container img.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive */
 /* Medium Screen */
 @media (max-width:1100px) {
