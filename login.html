@@ -17,7 +17,7 @@
             <div class="main-content">
                 <div class="slide-container" style="background-image: url(./img/mobile-frame.png);">
                     <div class="slide-content" id="slide-content">
-                        <img src="./img/screen1.jpg" alt="screen1">
+                        <img src="./img/screen1.jpg" class="active" alt="screen1">
                         <img src="./img/screen2.jpg" alt="screen2">
                         <img src="./img/screen3.jpg" alt="screen3">
                         <img src="./img/screen4.jpg" alt="screen4">
@@ -36,20 +36,48 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- script -->
-    <script> src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"</script>
+
+    <script>
+
+        setInterval(
+            ()=>{changeImage();
+        }, 2000);
+
+        // changeImage Function
+        function changeImage(){
+            var images = document
+            .getElementById('slide-content')
+            .getElementsByTagName('img');
+
+            console.log(images.length)
+
+            var i = 0;
+
+            for(i=0; i < images.length; i++){
+                var image = images[i];
+
+                if (image.classList.contains('active')){
+
+                    // remove active class from this image
+                    image.classList.remove('active');
+
+                    // if we are at the last image, then go back to the first image
+                    if(i == images.length - 1){
+                        var nextImage = images[0];
+                        nextImage.classList.add('active');
+                        break;
+                    }
+
+                    var nextImage = images[i+1];
+                    nextImage.classList.add('active');
+                    break;
+                }
+            }
+        }
+    </script>
+    
+    
+    <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
