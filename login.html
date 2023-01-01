@@ -74,7 +74,18 @@
 
         <!-- Footer -->
         <div class="footer">
-
+            <div class="links" id="links">
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Jobs</a>
+                <a href="#">Help</a>
+                <a href="#">Privacy</a>
+                <a href="#">API</a>
+                <a href="#">Top Account</a>
+                <a href="#">Hashtags</a>
+                <a href="#" id="dark-btn">Dark</a>
+            </div>
+            <div class="copyright">© 2023 Instagram from Meta.</div>
         </div>
     </div>
 
@@ -93,8 +104,6 @@
             var images = document
             .getElementById('slide-content')
             .getElementsByTagName('img');
-
-            console.log(images.length)
 
             var i = 0;
 
@@ -119,6 +128,38 @@
                 }
             }
         }
+    
+        // Dark Mode Change
+        function changeMode() {
+            var body = document.getElementsByTagName('body')[0];
+            var footerLinks = document
+            .getElementById('links')
+            .getElementsByTagName('a');
+
+            // if we are currently using dark mode
+            if (body.classList.contains('dark')){
+               body.classList.remove('dark');
+
+                for(let i=0; i<footerLinks.length; i++){
+                    footerLinks[i].classList.remove('dark-mode-link');
+                }
+            } else {
+                //we are currently using the light
+                body.classList.add('dark');
+
+                for(let i=0; i<footerLinks.length; i++) {
+                    footerLinks[i].classList.add('dark-mode-link');
+                }
+            }
+        }
+
+        document.getElementById('dark-btn').addEventListener('click', (e) => {
+            e.preventDefault();
+            changeMode();
+        });
+    
+    
+    
     </script>
     
     
