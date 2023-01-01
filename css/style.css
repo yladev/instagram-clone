@@ -420,13 +420,85 @@ body{
     visibility: visible;
 }
 
+/* Login Form */
+.form-container{
+    flex-grow: 1;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.box{
+    border: 1px solid #dfdfdf;
+    background-color: #fff;
+    border-radius: 3px;
+}
 
+.form-content{
+    margin-bottom: 10px;
+    padding: 10px;
+}
 
+.form-content .logo{
+    text-align: center;
+    height: 50px;
+    width: 175px;
+    margin: 10px auto 20px auto;
+}
 
+.form-content .logo img{
+    max-width: 100px;
+}
 
+.login-form{
+    padding-top: 25px;
+    margin-bottom: 10px;
+}
 
+.form-group{
+    margin: 0 40px 6px;
+}
 
+.login-input{
+    height: 35px;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    position: relative;
+}
+
+.login-input input{
+    width: 100%;
+    height: 100%;
+    padding: 9px 8px 7px;
+    border: 0;
+    outline: 0;
+    background: #fafafa;
+    color: #000;
+    font-size: 12px;
+}
+
+.login-input input::placeholder{
+    font-size: 12px;
+}
+
+.btn-group{
+    padding: 8px 40px;
+    width: 100%;
+}
+
+.login-btn{
+    width: 100%;
+    border: 1px solid transparent;
+    outline: none;
+    background: #800080;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
 
 
 
