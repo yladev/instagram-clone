@@ -377,9 +377,29 @@ body{
     margin: 20px 0;
 }
 
+/* Responsive */
+/* Medium Screen */
+@media (max-width:1100px) {
+    .right-col, .search-box{
+        display: none;
+    }
+    .nav-wrapper, .wrapper{
+        width: 100%;
+    }
+    .wrapper{
+        display: block;
+    }
+}
 
-
-
+/* Small Screen */
+@media (max-width:500px) {
+    .nav-items .icon{
+        margin: 0 5px;
+    }
+    .post-image{
+        height: 300px;
+    }
+}
 
 
 
