@@ -491,7 +491,7 @@ body{
     width: 100%;
     border: 1px solid transparent;
     outline: none;
-    background: #800080;
+    background: rgb(0, 162, 255);;
     color: #fff;
     font-weight: 600;
     font-size: 14px;
@@ -500,7 +500,68 @@ body{
     border-radius: 5px;
 }
 
+.or{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+}
 
+.or hr{
+    width: 35%;
+    margin: 0 10px;
+}
+
+.or span{
+    color: #919191;
+}
+
+.goto{
+   padding: 10px;
+   margin-bottom: 10px; 
+}
+
+.goto p{
+    font-size: 14px;
+    margin: 15px;
+    text-align: center;
+}
+
+.goto a{
+    text-decoration: none;
+    color: rgb(0, 162, 255);
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+}
+
+.app-download{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.app-download p{
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    margin: 10px 20px;
+}
+
+.store-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.store-link a img{
+    height: 40px;
+}
+
+.store-link a:nth-child(1){
+    margin-right: 8px;
+}
 
 
 
