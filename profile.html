@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
 </head>
 <body>
-    
-
+    <!-- Profile Page -->
     <header class="profile-header">
         <div class="profile-container">
             <div class="profile">
@@ -21,19 +20,22 @@
                 <div class="profile-user-settings">
                     <h1 class="profile-user-name">username</h1>
                     <button class="profile-btn profile-edit-btn">Edit Profile</button>
-                    <button class="profile-btn profile-settings-btn" aria-label="profile settings">
+                    <button 
+                        class="profile-btn profile-settings-btn" 
+                        aria-label="profile settings"
+                    >
                         <i class="fas fa-cog"></i>
                     </button>
                 </div>
                 <div class="profile-stats">
                     <ul>
-                        <li><span class="profile-stat-count">345</span>posts</li>
-                        <li><span class="profile-stat-count">1345</span>followers</li>
-                        <li><span class="profile-stat-count">1945</span>following</li>
+                        <li><span class="profile-stat-count">345</span> posts</li>
+                        <li><span class="profile-stat-count">1345</span> followers</li>
+                        <li><span class="profile-stat-count">1945</span> following</li>
                     </ul>
                 </div>
                 <div class="profile-bio">
-                    <p><span class="profile-real-name">name</span> bio</p>
+                    <p><span class="profile-real-name">Name</span> This is a descriptions</p>
                 </div>
             </div>
         </div>
@@ -43,7 +45,27 @@
 
 
 
-
+    <main>
+        <div class="profile-container">
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="./img/1.jpg" alt="">
+                    <div class="gallery-item-info">
+                        <ul>
+                            <li class="gallery-item-likes">
+                                <span class="hide-gallery-element">Likes:</span>
+                                <i class="fas fa-heart"></i>
+                            </li>
+                            <li class="gallery-item-comment"> 
+                                <span class="hide-gallery-element">Comments:</span>
+                                <i class="fas fa-comment"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
 
