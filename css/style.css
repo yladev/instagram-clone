@@ -671,6 +671,7 @@ body{
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.5;
+    margin-left: 0;
     margin-top: 2.3rem;
 }
 
@@ -730,6 +731,25 @@ body{
 #icons{
     padding-right: 15px;
 }
+
+/* User_Profile */
+.follow-btn{
+    display: inline-block;
+    background: rgb(0, 162, 255);
+    color: #fff;
+    font-size: 16px;
+    padding: 8px;
+    margin-top: 15px;
+    border: none;
+    width: 450px;
+} 
+
+
+
+
+
+
+
 
 /* Footer */
 .footer{
