@@ -640,6 +640,11 @@ body{
     margin-left: 2rem;
 }
 
+.profile-edit-btn:hover{
+    background-color: #800080;
+    color: #800080;
+}
+
 .proile-settings-btn{
     font-size: 2rem;
     margin-left: 1rem;
@@ -658,7 +663,7 @@ body{
     cursor: pointer;
 }
 
-.fas{
+#icon{
     padding-left: 12px;
 }
 
@@ -675,11 +680,56 @@ body{
     font-weight: 600;
 }
  
+/* Gallery */
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem -1rem;
+    padding-bottom: 3rem;
+}
 
+.gallery-item{
+    position: relative;
+    flex: 1 0 22rem;
+    margin: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
 
+.gallery-item:hover .gallery-item-info,.gallery-item:focus .gallery-item-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
 
+.gallery-item-info{
+    display: none;
+}
 
+.gallery-item-info li{
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
 
+.gallery-item-likes{
+    margin-right: 2.2rem;
+}
+
+.gallery-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#icons{
+    padding-right: 15px;
+}
 
 /* Footer */
 .footer{
@@ -765,7 +815,34 @@ body{
     }
 }
 
-
+/* Gallery */
+@media screen and (max-width: 800px){
+    .profile{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 4rem 0;
+    }
+    .profile::after{
+        display: none;
+    }
+    .profile-image, 
+    .profile-user-settings, 
+    .profile-bio, 
+    .profile-stats{
+        flex: none;
+        width: auto;
+        margin: 5px auto;
+    }
+    .profile-stats li{
+        display: block;
+    }
+    .profile-image{
+        margin: 0 auto;
+    }
+    .profile-user-name{
+        font-size: 20px;
+    }
+}
 
 
 

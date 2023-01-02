@@ -10,6 +10,24 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
 </head>
 <body>
+    <!-- navigation -->
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <img class="brand-img" src="./img/logo.png" alt="Logo">
+            <form class="search-form">
+                <input type="text" class="search-box" placeholder="search..">
+            </form>
+            <div class="nav-items">
+                <i class="icon fas fa-home"></i>
+                <i class="icon fas fa-plus"></i>
+                <i class="icon fas fa-heart"></i>
+                <div class="icon user-profile">
+                    <i class="fas fa-user"></i> 
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <!-- Profile Page -->
     <header class="profile-header">
         <div class="profile-container">
@@ -24,7 +42,7 @@
                         class="profile-btn profile-settings-btn" 
                         aria-label="profile settings"
                     >
-                        <i class="fas fa-cog"></i>
+                        <i class="fas fa-cog" id="icon"></i>
                     </button>
                 </div>
                 <div class="profile-stats">
@@ -44,21 +62,53 @@
 
 
 
-
+    <!-- Gallery -->
     <main>
         <div class="profile-container">
-            <div class="gallery">
+            <div class="gallery"> 
                 <div class="gallery-item">
-                    <img src="./img/1.jpg" alt="">
+                    <img src="./img/2.jpg" class="gallery-image" alt="">
                     <div class="gallery-item-info">
                         <ul>
                             <li class="gallery-item-likes">
                                 <span class="hide-gallery-element">Likes:</span>
-                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart" id="icons"></i>
                             </li>
-                            <li class="gallery-item-comment"> 
+                            <li class="gallery-item-comments"> 
                                 <span class="hide-gallery-element">Comments:</span>
-                                <i class="fas fa-comment"></i>
+                                <i class="fas fa-comment" id="icons"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="./img/1.jpg" class="gallery-image" alt="">
+                    <div class="gallery-item-info">
+                        <ul>
+                            <li class="gallery-item-likes">
+                                <span class="hide-gallery-element">156:</span>
+                                <i class="fas fa-heart" id="icons"></i>
+                            </li>
+                            <li class="gallery-item-comments"> 
+                                <span class="hide-gallery-element">100:</span>
+                                <i class="fas fa-comment" id="icons"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="./img/1.jpg" class="gallery-image" alt="">
+                    <div class="gallery-item-info">
+                        <ul>
+                            <li class="gallery-item-likes">
+                                <span class="hide-gallery-element">Likes:</span>
+                                <i class="fas fa-heart" id="icons"></i>
+                            </li>
+                            <li class="gallery-item-comments"> 
+                                <span class="hide-gallery-element">Comments:</span>
+                                <i class="fas fa-comment" id="icons"></i>
                             </li>
                         </ul>
                     </div>
