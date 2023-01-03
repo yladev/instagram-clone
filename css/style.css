@@ -733,7 +733,7 @@ body{
 }
 
 /* User_Profile */
-.follow-btn{
+.follow-btn-user-profile{
     display: inline-block;
     background: rgb(0, 162, 255);
     color: #fff;
