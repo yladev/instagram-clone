@@ -738,11 +738,59 @@ body{
     background: rgb(0, 162, 255);
     color: #fff;
     font-size: 16px;
-    padding: 8px;
+    padding: 5px;
     margin-top: 15px;
     border: none;
     width: 450px;
 } 
+
+/* Camera */
+.camera-container{
+    max-width: 93.5rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.camera{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem;
+}
+
+.camera-image{
+    position: relative;
+    flex:  1 0 22rem;
+    margin: 1rem;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.camera-form input{
+    width: 100%;
+}
+
+.camera-form{
+    width: 50%;
+    margin: 5px auto;
+}
+
+.upload-btn{
+    background: rgb(0, 162, 255);
+    color: #fff;
+    width: 70px;
+    height: 100%;
+    font-size: 16px;
+    border: none;
+    display: block;
+    outline: none;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+
+
+
+
 
 
 
