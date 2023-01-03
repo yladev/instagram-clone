@@ -788,7 +788,19 @@ body{
     border-radius: 3px;
 }
 
+/* Search */
+.search-component{
+    display: flex;
+}
 
+.search-btn{
+    color: rgb(0, 162, 255);
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    margin-left: 10px;
+}
 
 
 
