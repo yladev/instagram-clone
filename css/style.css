@@ -265,6 +265,7 @@ body{
     border: none;
     outline: none;
     font-size: 14px;
+    background-color: transparent;
 }
 
 .comment-btn,
@@ -802,6 +803,7 @@ body{
     background: none;
     outline: none;
     border: none;
+    padding-right: 10px;
     font-size: 14px;
     margin-left: 10px;
 }
@@ -809,6 +811,30 @@ body{
 .mt-5{
     margin-top: 90px;
 }
+
+.search-result-item-btn button{
+    color: rgb(0, 162, 255);
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    float: right;
+}
+
+.list-group{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+.list-group-item{
+    border: 1px solid #dfdfdf;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
 
 .search-result-item{
     display: flex;
@@ -846,21 +872,35 @@ body{
     margin: 5px;
 }
 
-.search-result-item-btn button{
-    color: rgb(0, 162, 255);
-    background: none;
-    outline: none;
+.mb-3{
+    margin-bottom: 20px;
+}
+
+.form-control{
+    background-color: white;
+    width: 100%;
     border: none;
-    font-size: 14px;
-    float: right;
+    outline: none;
+    height: 23px;
+    padding-left: 5px;
+    padding-right: 10px;
 }
 
-
-.list-group-item{
-    border: 1px solid #dfdfdf;
+.update-profile-btn{
+    background-color: #4d90fe;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-
+.update-profile-btn:hover{
+    background-color: #007bff;
+}
 
 
 
