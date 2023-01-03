@@ -902,7 +902,10 @@ body{
     background-color: #007bff;
 }
 
-
+/* Single Post */
+.single-post-container{
+    margin-top: 5px;
+}
 
 
 
