@@ -915,7 +915,17 @@ body{
     padding: 0 2rem;
 }
 
-
+/* Sign Up */
+.alert-danger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    opacity: 30;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
 
 
 
