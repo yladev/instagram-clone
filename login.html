@@ -32,20 +32,21 @@
                             <img src="./img/logo.png" alt="" class="logo-img">
                         </div>
                         <form action="" class="login-form" id="login-form">
+                            <p class="text-center alert-danger" id="error_message"></p>
                             <div class="form-group">
                                 <div class="login-input">
-                                    <input type="text" name="email" placeholder="Type your email...">
+                                    <input type="text" name="email" placeholder="Type your email..." required>
                                 </div>
                             </div>
                             
                             <div class="form-group">
                                 <div class="login-input">
-                                    <input type="password" name="password" placeholder="Type your password...">
+                                    <input type="password" name="password" id="password" placeholder="Type your password..." required>
                                 </div>
                             </div>
                             
                             <div class="btn-group">
-                                <button class="login-btn" id="login-btn" type="submit">Log In</button>
+                                <button class="login-btn" id="login_btn" type="submit">Log In</button>
                             </div>
                         </form>
                         <div class="or">
@@ -153,10 +154,29 @@
             }
         }
 
+        function verifyForm() {
+            var password = document.getElementById('password').value;
+            var error_message = document.getElementById('error_message');
+
+            if(password.length < 6){
+                error_message.innerHTML= "Password is too short";
+                return false;
+            }
+
+            return true;
+        }
+
         document.getElementById('dark-btn').addEventListener('click', (e) => {
             e.preventDefault();
             changeMode();
         });
+
+        document.getElementById('login-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            verifyForm();
+        })
+
 
     </script>
     
